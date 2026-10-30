@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  /* ЦВЕТОВА ПАЛИТРА */
+  --bg-main: #0F0F12;          /* Основен фон на екрана */
+  --bg-surface: #1A1A22;       /* Фон на карти, панели, чат балончета */
+  --bg-surface-hover: #262633; /* При посочване с мишката */
+  
+  --primary: #9D4EDD;          /* Главен акцентен цвят (лилаво за бутони и важни елементи) */
+  --primary-hover: #B565F5;
+  --secondary: #FF007F;        /* Вторичен цвят (акцент за любов/харесване/видео) */
+  
+  --text-main: #FFFFFF;        /* Основен текст (висок контраст) */
+  --text-muted: #8E8E9F;       /* Второстепенен текст / дати / часовници */
+  --status-online: #00E676;    /* Зелено за успешна синхронизация */
+  --status-danger: #FF3B30;    /* Червено за предупреждения и блок */
+
+  /* ГЕОМЕТРИЯ */
+  --radius-sm: 8px;
+  --radius-md: 16px;           /* Стандартна заобленост на бутони и карти */
+  --radius-full: 9999px;       /* За кръгли аватари и балончета */
+  
+  /* ШРИФТ */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: #2D2D3B;
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3E3E50;
+}
+

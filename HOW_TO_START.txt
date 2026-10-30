@@ -1,0 +1,62 @@
+========================================================================
+            FS_Chat - QUICK START & LAUNCH GUIDE
+========================================================================
+
+Welcome! This application is fully decentralized and designed for maximum 
+ease of use — no terminal commands, no complex installation steps.
+
+------------------------------------------------------------------------
+1. FOR WINDOWS PC (EASIEST WAY):
+------------------------------------------------------------------------
+👉 Single executable file: "FS_Chat.exe"
+   - Just double-click on "FS_Chat.exe".
+   - The chat opens immediately in a standalone desktop window!
+   - NO Node.js, Python, or additional runtime dependencies required.
+
+👉 Browser Selection:
+   - If you have multiple browsers installed (Chrome, Edge, Brave, Firefox, Opera),
+     you can select your favorite browser in "Chat Settings" -> "Startup Browser".
+   - The choice is saved in browser_config.json and applies automatically.
+
+------------------------------------------------------------------------
+2. FOR SMARTPHONES (ANDROID & IPHONE / IPAD):
+------------------------------------------------------------------------
+You do NOT need to download complex binary packages on your mobile phone!
+The application is a Progressive Web App (PWA) that installs in 1 tap:
+
+👉 For Android (Google Chrome):
+   1. Open the chat link in Chrome.
+   2. Tap the 3-dots menu (⋮) in the top right corner.
+   3. Select "Install app" or "Add to Home screen".
+   4. The FS_Chat icon will appear on your phone home screen — tap it 
+      to launch it as a full native app without browser URL bars!
+
+👉 For iPhone / iPad (Safari):
+   1. Open the chat link in Safari.
+   2. Tap the Share button (square with arrow pointing up ⎋) on the bottom bar.
+   3. Scroll down and select "Add to Home Screen".
+   4. Tap "Add". The app icon appears on your home screen and launches 
+      as a smooth, standalone iOS application!
+
+👉 Voice calls & media on smartphones:
+   - Hold your finger on the microphone button for Push-to-Talk voice chat.
+   - All voice and audio messages are End-to-End encrypted over Nostr relays 
+     WITHOUT sharing or exposing your real IP address!
+
+------------------------------------------------------------------------
+3. FOR APPLE MAC & LINUX:
+------------------------------------------------------------------------
+👉 For Apple Mac:
+   - Double-click "FS_Chat.command".
+
+👉 For Linux:
+   - Run "FS_Chat.sh" (chmod +x FS_Chat.sh && ./FS_Chat.sh).
+
+------------------------------------------------------------------------
+4. PRIVACY & SECURITY:
+------------------------------------------------------------------------
+- All direct messages use NIP-17 Gift Wrap (End-to-End Encrypted).
+- Anonymous voice chat runs over Ephemeral Nostr relays (Kind 20000+),
+  with NO peer-to-peer WebRTC IP leakage.
+- No centralized user database; all data stays on your local device.
+========================================================================

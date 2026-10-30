@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "FS_Chat",
+  "short_name": "FS_Chat",
+  "description": "Децентрализирано PWA приложение за свободен и защитен чат с NOSTR протокол, E2EE криптиране, гласови съобщения и Local-First IndexedDB.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#0F0F12",
+  "background_color": "#0F0F12",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

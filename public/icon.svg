@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F0F12" />
+      <stop offset="100%" stop-color="#1A1A22" />
+    </linearGradient>
+    <linearGradient id="heart-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF007F" />
+      <stop offset="50%" stop-color="#D946EF" />
+      <stop offset="100%" stop-color="#9D4EDD" />
+    </linearGradient>
+    <linearGradient id="bolt-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE600" />
+      <stop offset="100%" stop-color="#FFAA00" />
+    </linearGradient>
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur1" />
+      <feGaussianBlur stdDeviation="30" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="512" height="512" rx="108" fill="url(#bg-grad)" />
+  
+  <!-- Outer subtle glow -->
+  <path d="M256 430 C150 340 70 270 70 180 A100 100 0 0 1 240 120 L256 142 L272 120 A100 100 0 0 1 442 180 C442 270 362 340 256 430 Z"
+        fill="none" stroke="#FF007F" stroke-width="8" opacity="0.35" filter="url(#neon-glow)" />
+
+  <!-- Heart Base -->
+  <path d="M256 425 C155 338 76 268 76 182 A94 94 0 0 1 236 126 L256 148 L276 126 A94 94 0 0 1 436 182 C436 268 357 338 256 425 Z"
+        fill="url(#heart-grad)" filter="url(#neon-glow)" />
+  
+  <!-- Nostr Lightning Bolt embedded inside Heart -->
+  <path d="M276 138 L218 248 L254 248 L232 358 L308 232 L266 232 Z" 
+        fill="url(#bolt-grad)" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" />
+</svg>
